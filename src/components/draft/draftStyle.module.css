@@ -1,0 +1,165 @@
+.bodyDraft {
+    margin: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(rgb(73, 7, 87), rgb(73, 7, 87));
+    --line: 0.3em solid white;
+    transform: rotate(90deg);
+
+
+}
+
+.container {
+    width: 120em;
+    height: 80em;
+    background-color: green;
+    font-size: 5.5px;
+    padding: 5em;
+
+}
+
+.container span {
+    display: block;
+}
+
+.field {
+    border: var(--line);
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+}
+
+.halfwayLine {
+    width: 60em;
+    height: 80em;
+    border-right: var(--line);
+}
+
+.centreCircle,
+.penaltyArc {
+    width: 20em;
+    height: 20em;
+    border: var(--line);
+    border-radius: 50%;
+    position: absolute;
+    top: 30em;
+}
+
+.centreCircle {
+    left: calc((120em - 20em - 0.3em)/2);
+}
+
+.centreMark {
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(80em / 2 - 1em);
+    left: calc(120em / 2 - 1em + 0.3em / 2);
+
+}
+
+.penaltyMark {
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(80em / 2 - 1em);
+    left: calc(12em - 2em / 2);
+}
+
+.penaltyArea {
+    width: 18em;
+    height: 44em;
+    border: var(--line);
+    position: absolute;
+    top: calc((80em - 44em) / 2);
+    left: -0.3em;
+    background-color: green;
+}
+
+.penaltyArc {
+    left: calc(12em - 20em / 2);
+    z-index: -1;
+}
+
+.goalArea {
+    width: 6em;
+    height: 20em;
+    border: var(--line);
+    position: absolute;
+    top: calc((80em - 20em) / 2);
+    left: -0.3em;
+}
+
+.cornerArc{
+    border:1px solid red;
+}
+
+.cornerArc::after,
+.cornerArc::before{
+    content: '';
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border: 0.3em solid white;
+    border-radius: 50%;
+    left:calc(-5em / 2 - 0.3em);
+}
+
+.cornerArc::before {
+    top:calc(-5em / 2 - 0.3em);
+}
+
+.cornerArc::after {
+    bottom:calc(-5em / 2 - 0.3em);
+}
+
+
+.right {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: rotateY(180deg);
+}
+
+/* GridComponent.css */
+.gridContainer {
+    z-index: 100; /* Higher z-index, appears above elements with lower z-index values */
+    transform: rotate(90deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-gap: 130px; /* Adjust the gap as needed */
+    position: absolute;
+    right: 460px;
+    bottom: 5px;
+}
+.deffenders{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 500px;
+}
+
+.align{
+    right: 50px;
+}
+.align2{
+    right: 220px;
+    top: 60px;
+}
+.align3{
+    right: 160px;
+    bottom: 3px;
+}
+.btn2{
+    transform: rotate(270deg);
+    bottom: 500px;
+    right: 500px;
+}

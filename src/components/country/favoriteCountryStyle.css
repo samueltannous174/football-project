@@ -1,0 +1,39 @@
+body{
+    background: #490757;
+    border: 2px solid #000;
+    height: 900px;
+}
+.main2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+.arrows{
+    font-size: 50px;
+    color: cornflowerblue;
+}
+.h11{
+    margin-bottom: 100px;
+    color: #e50c4f;
+}
+.h1{
+    color: #fc0c4c;
+    margin-top:90px ;
+
+}
+.btnnn{
+  position: absolute;
+    left: 1200px;
+    bottom: 190px;
+}
