@@ -32,7 +32,6 @@ const FavoriteCountry = ()=>{
         }
     }
     const changeRouteToFav = () => {
-        // setSelectedCountry(countries[index])
         nav('/Favorite_team')
     }
 

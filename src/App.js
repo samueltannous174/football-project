@@ -8,6 +8,7 @@ import FavoriteCountry from './components/country/favoriteCountry'
 import {Route, Navigate} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import style from './App.module.css'
+import CustomizedMenus2 from "./menuList2";
 
 
 const styles = {
@@ -73,8 +74,7 @@ function App() {
                     </h1>
                     <div className={style.part2}>
                         <CustomizedMenus/>
-                        <CustomizedMenus/>
-
+                        <CustomizedMenus2/>
                         <FaBars className={style.bars}onClick={() => sidebarOn()}/>
 
                     </div>
